@@ -1,0 +1,6 @@
+{
+    "listingTemplate": "templates/listing.html",
+    "theme": "simple",
+    "puppeteerLaunchArgs": "--no-sandbox",
+    "port": 8888
+}

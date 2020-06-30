@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  slides:
+    build: .
+    volumes:
+        - ./:/slides  
+    environment:
+        DEBUG: reveal-md
+    command: sh -c "node /app/bin/reveal-md.js /slides"
+    ports:
+      - 8888:8888
